@@ -31,4 +31,15 @@ function selector (param) {
       } 
 }
 
-export {setDef, selector}
+
+
+function propSetDef (props, propName, defValue) {
+
+      if(props.hasOwnProperty(props)){
+            props[propName] !== undefined ? props[propName] : defValue;  
+      }
+      
+      return defValue;
+}
+
+export {setDef, selector, propSetDef}
