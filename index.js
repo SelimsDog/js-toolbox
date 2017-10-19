@@ -32,10 +32,17 @@ function selector (param) {
 }
 
 
+/**
+ * React component's prop check and set default if prop property is undefined 
+ * @param {Object} props React component props object
+ * @param {String} propName prop name
+ * @param {*} defValue
+ * @return {*} 
+ */
 
 function propSetDef (props, propName, defValue) {
 
-      if(props.hasOwnProperty(props)){
+      if(props !== undefined && props.hasOwnProperty(props)){
             props[propName] !== undefined ? props[propName] : defValue;  
       }
       
