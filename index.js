@@ -39,15 +39,14 @@ function selector (param) {
  * @param {*} defValue
  * @return {*} 
  */
-
 function propSetDef (props, propName, defValue) {
-
-      if(props !== undefined && props.hasOwnProperty(props)){
-            props[propName] !== undefined ? props[propName] : defValue;  
-      }
       
+      if(props !== undefined && props.hasOwnProperty(propName)){
+            return  props[propName] !== undefined ? props[propName] : defValue;  
+      }
       return defValue;
 }
+      
 
 
 /**
