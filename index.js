@@ -49,4 +49,16 @@ function propSetDef (props, propName, defValue) {
       return defValue;
 }
 
-export {setDef, selector, propSetDef}
+
+/**
+ * Document size
+ * @return {Object} {x, y} 
+ */
+function getDocSize() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      return {x:w, y:h};
+}
+
+
+export {setDef, selector, propSetDef, getDocSize}
