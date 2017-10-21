@@ -1,4 +1,5 @@
 
+
 /**
  * if first parameter is undefined, it will return second parameter.
  * @param {*} value 
@@ -60,4 +61,10 @@ function getDocSize() {
 }
 
 
-export {setDef, selector, propSetDef, getDocSize}
+module.exports = {
+      setDef : setDef,
+      selector : selector, 
+      propSetDef : propSetDef,
+      getDocSize : getDocSize
+}
+//export {setDef, selector, propSetDef, getDocSize}
